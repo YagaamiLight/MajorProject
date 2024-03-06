@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import CropRecommendationForm from './components/cropRecommendForm';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Agricultural Crop Recommendation System</h1>
       </header>
+      <main>
+        <CropRecommendationForm />
+      </main>
+      <footer>
+        <p>Footer content goes here.</p>
+      </footer>
     </div>
   );
 }
